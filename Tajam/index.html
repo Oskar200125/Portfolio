@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tajam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://kit.fontawesome.com/f6629e8fd1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<!--Sprite-->
+<svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 128.000000 128.000000">
+        <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)">
+            <path d="M642 1245 c-112 -35 -160 -114 -169 -280 l-6 -105 -59 0 -58 0 0
+            -110 0 -110 60 0 60 0 2 -307 3 -308 128 -3 127 -3 0 311 0 310 89 0 88 0 7
+            93 c4 50 9 100 12 110 5 15 -4 17 -95 17 l-101 0 0 73 c0 102 8 111 109 115
+            l81 4 0 104 0 104 -117 -1 c-69 0 -136 -6 -161 -14z"/>
+        </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 128.000000 128.000000">
+        <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)">
+            <path d="M814 1149 c-108 -31 -186 -136 -188 -250 l-1 -61 -57 6 c-157 18
+            -345 115 -447 231 l-31 36 -15 -35 c-21 -50 -19 -152 4 -202 10 -22 33 -57 51
+            -78 l33 -37 -29 7 c-16 4 -40 11 -53 16 -13 5 -26 7 -28 5 -8 -9 19 -103 38
+            -134 26 -41 73 -81 124 -104 l40 -19 -30 -1 c-16 -1 -40 -1 -52 0 -39 3 -25
+            -35 36 -103 30 -33 114 -76 151 -76 l25 -1 -30 -24 c-54 -44 -152 -77 -255
+            -84 l-95 -7 75 -36 c188 -91 394 -100 591 -28 162 59 289 169 381 330 53 93
+            98 259 98 363 0 28 10 44 62 95 34 34 59 64 57 67 -3 2 -27 -2 -54 -10 -65
+            -20 -86 -20 -56 1 23 16 81 100 81 116 0 5 -10 2 -22 -6 -13 -8 -48 -22 -79
+            -31 l-56 -18 -44 30 c-71 49 -150 64 -225 42z"/>
+        </g>
+    </symbol>
+</svg>
+
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img class="logo" src="img/header/header-logo.png" alt="Logo">
+                    <div class="logo__text">tajam</div>
+                </a>
+
+                <div class="nav" id="nav">
+                    <a class="nav__link" href="#">Home</a>
+                    <a class="nav__link" href="#">About</a>
+                    <a class="nav__link" href="#">Expertise</a>
+                    <a class="nav__link" href="#">Teams</a>
+                    <a class="nav__link" href="#">Works</a>
+                    <a class="nav__link" href="#">People say</a>
+                    <a class="nav__link" href="#">Contact</a>
+                </div>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+
+            <div class="header__contentSlider" id="header__contentSlider">
+                <div class="slick__item">
+                    <div class="header__content">
+                        <div class="header__title">We Are Awesome Creative Agency</div>
+                        <div class="header__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</div>
+                        <a class="btn" href="#" cursor="pointer">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="slick__item">
+                    <div class="header__content">
+                        <div class="header__title">We Are Two</div>
+                        <div class="header__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</div>
+                        <a class="btn" href="#" cursor="pointer">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="slick__item">
+                    <div class="header__content">
+                        <div class="header__title">We Are Three</div>
+                        <div class="header__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</div>
+                        <a class="btn" href="#" cursor="pointer">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="slick__item">
+                    <div class="header__content">
+                        <div class="header__title">We Are Four</div>
+                        <div class="header__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</div>
+                        <a class="btn" href="#" cursor="pointer">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+<!--
+            <div class="header__slider">
+                <div class="slider__inner">1</div>
+                <div class="slider__inner">2</div>
+                <div class="slider__inner">3</div>
+                <div class="slider__inner">4</div>
+            </div>
+-->
+        </div>
+    </div>
+
+
+    <div class="story">
+        <div class="container">
+            <div class="story__inner">
+                <div class="story__img">
+                    <img class="story__photo" src="img/story/1.png" alt="Logo">
+                </div>
+
+                <div class="story__content">
+                    <div class="story__title">Our story</div>
+                    <div class="story__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</div>
+
+                    <div class="story__textz">
+                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+                    <a class="btn btn--story" href="#" cursor="pointer">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="watch">
+        <div class="container">
+            <div class="watch__content">
+                <a href="https://www.youtube.com/watch?v=c39cnNvnRVg" target="_blank">
+                    <img src="img/watch/play.png" alt="Play">
+                </a>
+
+                <p class="watch__text">Watch our story</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="expertise">
+        <div class="container">
+            <div class="section">
+                <div class="section__title">Expertise</div>
+
+                <div class="section__text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+            </div>
+
+            <div class="expertise__inner">
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/1.png" alt="WEB DESIGN & DEVELOPMENT">
+                    <div class="expertise__title">WEB DESIGN &amp; DEVELOPMENT</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/2.png" alt="BRANDING IDENTITY">
+                    <div class="expertise__title">BRANDING IDENTITY</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/3.png" alt="MOBILE APP">
+                    <div class="expertise__title">MOBILE APP</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/4.png" alt="SEARCH ENGINE OPTIMIZATION">
+                    <div class="expertise__title">SEARCH ENGINE OPTIMIZATION</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/5.png" alt="GAME DEVELOPMENT">
+                    <div class="expertise__title">GAME DEVELOPMENT</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+
+                <div class="expertise__item">
+                    <img class="expertise__img" src="img/expertise/6.png" alt="MADE WITH LOVE">
+                    <div class="expertise__title">MADE WITH LOVE</div>
+                    <div class="expertise__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team">
+        <div class="container">
+            <div class="section section--bg">
+                <div class="section__title__bg">MEET OUR AMAZING TEAM</div>
+
+                <div class="section__text__bg">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+            </div>
+
+            <div class="team__inner">
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/1.png" alt="">
+                    <div class="team__name">SEMF UCUK</div>
+                    <div class="team__prof">CEO & FOUNDER</div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/1.png" alt="">
+                    <div class="team__name">DIK ADALIN</div>
+                    <div class="team__prof">ENGINEERING</div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/1.png" alt="">
+                    <div class="team__name">JENG KOL</div>
+                    <div class="team__prof">DESIGNER</div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/1.png" alt="">
+                    <div class="team__name">PET ROMAK</div>
+                    <div class="team__prof">MARKETING</div>
+                </div>
+            </div>
+
+            <div class="team__text">Become part of our dream team, let’s join us!</div>
+            <a class="btn btn--team" href="#" cursor="pointer">We are hiring</a>
+        </div>
+    </div>
+
+
+    <div class="works">
+        <div class="container">
+            <div class="works__content">
+                <div class="works__title">Our works</div>
+                <a href="#" class="works__a">See All Project in dribbble ></a>
+            </div>
+        </div>
+
+        <div class="works__inner">
+            <div class="works__item">
+                <img src="img/works/w1.png" class="works__img" alt="Work-1">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w2.png" class="works__img" alt="Work-2">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w1.png" class="works__img" alt="Work-3">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w2.png" class="works__img" alt="Work-4">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w1.png" class="works__img" alt="Work-5">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w2.png" class="works__img" alt="Work-6">
+            </div>
+
+            <div class="works__item">
+                <img src="img/works/w3.png" class="works__img" alt="Work-7">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w4.png" class="works__img" alt="Work-8">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w3.png" class="works__img" alt="Work-9">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w4.png" class="works__img" alt="Work-10">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w3.png" class="works__img" alt="Work-11">
+            </div>
+            <div class="works__item">
+                <img src="img/works/w4.png" class="works__img" alt="Work-12">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="btn__inner">
+                <a class="btn btn--works" href="#" cursor="pointer">Load more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reviews">
+        <div class="container">
+            <div class="reviewsSlider" id="reviewsSlider">
+            <div>
+                <div class="reviews__item">
+                    <br>
+                    <br>
+                    <div class="reviews__title">“</div>
+                    <div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</div>
+                    <div class="reviews__name">JANE GALADRIEL</div>
+                    <div class="reviews__prof">CEO TENGKUREP</div>
+                    <!--
+                    <div class="reviews__slider">
+                        <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
+                        <img class="reviews__img" src="img/reviews/1.png" alt="Review-1">
+                        <img class="reviews__img" src="img/reviews/2.png" alt="Review-2">
+                        <img class="reviews__imgx" src="img/reviews/3.png" alt="Review-3">
+                        <img class="reviews__img" src="img/reviews/4.png" alt="Review-4">
+                        <img class="reviews__img" src="img/reviews/5.png" alt="Review-5">
+                        <a class="reviews__btn reviews__btn--next" href="#">Next</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <div>
+                <div class="reviews__item">
+                    <br class="str">
+                    <br class="str">
+                    <div class="reviews__title">“</div>
+                    <div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</div>
+                    <div class="reviews__name">DIK ADALIN</div>
+                    <div class="reviews__prof">ENGINEERING</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="reviews__item">
+                    <br>
+                    <br>
+                    <div class="reviews__title">“</div>
+                    <div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</div>
+                    <div class="reviews__name">Victoria Valdez</div>
+                    <div class="reviews__prof">UI DESIGNER</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="reviews__item">
+                    <br>
+                    <br>
+                    <div class="reviews__title">“</div>
+                    <div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</div>
+                    <div class="reviews__name">Ruth Woods</div>
+                    <div class="reviews__prof">FOUNDER, CEO</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="reviews__item">
+                    <br>
+                    <br>
+                    <div class="reviews__title">“</div>
+                    <div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</div>
+                    <div class="reviews__name">PET ROMAK</div>
+                    <div class="reviews__prof">MARKETING</div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="client">
+        <div class="container">
+            <div class="client__inner">
+                <div class="client__item">
+                    <div class="client__title">GIVE US A GOOD NEWS</div>
+                    <input type="text" name="name" class="client__input" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" class="client__input" placeholder="Email" autocomplete="off">
+                    <input type="text" name="subject" class="client__input" placeholder="Subject" autocomplete="off">
+                    <textarea class="client__inputx" name="massage" placeholder="Your Massage"></textarea>
+                    <a class="btn btn--client" href="#" cursor="pointer" type="submit">Submit</a>
+                </div>
+
+
+
+                <div class="client__item">
+                    <div class="client__titlex">OUR HAPPY CLIENT</div>
+
+                    <div class="client__album">
+                        <div class="client__photocol">
+                            <img class="client__img" src="img/client/1.svg" alt="">
+                            <img class="client__img" src="img/client/2.svg" alt="">
+                            <img class="client__img" src="img/client/3.svg" alt="">
+                            <img class="client__img" src="img/client/4.svg" alt="">
+                            <img class="client__img" src="img/client/5.svg" alt="">
+                        </div>
+
+                        <div class="client__photocol">
+                            <img class="client__img" src="img/client/6.svg" alt="">
+                            <img class="client__img" src="img/client/7.svg" alt="">
+                            <img class="client__img" src="img/client/8.svg" alt="">
+                            <img class="client__img" src="img/client/9.svg" alt="">
+                            <img class="client__img" src="img/client/10.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <a class="header__logo" href="#">
+                        <img class="logo" src="img/header/header-logo.png" alt="Logo">
+                        <div class="logo__text">tajam</div>
+                    </a>
+                    <div class="footer__text">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</div>
+                </div>
+
+                <div class="footer__itemx">
+                    <div class="footer__title">OUR STUDIO</div>
+
+                    <div class="footer__icon">
+                        <img src="img/footer/1.svg" alt="">
+                    </div>
+                    <div class="footer__address">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</div>
+
+                    <div class="footer__iconx">
+                        <img src="img/footer/2.svg" alt="">
+                    </div>
+                    <div class="footer__phone">(+62) 21-2224 3333</div>
+                </div>
+
+                <div class="footer__itemx">
+                    <div class="footer__title">STAY IN TOUCH</div>
+
+                    <form action="/" class="sub" method="post">
+                        <input type="email" name="name" class="sub__input" placeholder="Subscribe our newsletter" autocomplete="off">
+                        <button class="sub__btn" type="submit"><img src="img/footer/3.svg" alt="">
+                        </button>
+                    </form>
+
+                    <div class="icon__inner">
+                        <a href="#" class="icon__i" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon__i" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon__fwi" target="_blank">
+                            <i class="fa-brands fa-dribbble" id="iii"></i>
+                        </a>
+
+                        <a href="#" class="icon__fwi" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="icon__fwi" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__last">
+                <div class="footer__nav">
+                    <a href="#" class="fnav__link">HELP</a>
+                    <a href="#" class="fnav__link">TERMS & CONDITION</a>
+                    <a href="#" class="fnav__link">PRIVACY</a>
+                </div>
+
+                <div class="copyright">Copyright © 2015 - Tajem Creative</div>
+            </div>
+
+        </div>
+    </footer>
+
+
+<!--Javascript-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
