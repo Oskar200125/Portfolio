@@ -28,6 +28,111 @@ body{
 }
 
 /*==========Header==========*/
+/*Burger*/
+.header__burger{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: #3fa046;
+}
+
+.burger__inner{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger__logo, .burger__close{
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.burger__close{
+    display: inline-block;
+    padding: 5px;
+    height: 41px;
+}
+
+.burger__nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav__btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Brown', sans-serif;
+    margin-bottom: 20px;
+}
+
+.nav__btn:last-child{
+    margin-bottom: 0px;
+}
+
+.burger__bottom{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.burger__bottom::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.header__burger .login{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header__burger .login__link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header__burger .login:hover .login__svg{
+    fill: #fff;
+}
+
+.header__burger .login:hover .login__link{
+    color: #fff;
+}
+
+.btn__green.white{
+    background: #fff;
+    color: #000;
+    font-family: 'Brown', sans-serif;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.header__burger.show{
+    display: block;
+}
+
+/*==============================*/
+
 .header{
     padding: 30px 0;
 }
