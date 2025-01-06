@@ -790,6 +790,145 @@ body{
     bottom: -8px;
 }
 
+/*Product*/
+.product{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.product__inner{
+    display: flex;
+}
+
+.product__left{
+    width: 30%;
+}
+
+.product__right{
+    width: 70%;
+    padding-left: 100px;
+}
+
+.product .assortment__block{
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+    cursor: auto;
+}
+
+.product__article{
+    margin-bottom: 20px;
+}
+
+.product__p{
+    color: #9a989b;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    transition: color .2s linear;
+}
+
+.product__p.main{
+    color: #ff8f1e;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    transition: color .2s linear;
+}
+
+.product__p:hover{
+    color: #ff8f1e;
+}
+
+.product__volume{
+    margin-bottom: 50px;
+    color: #9a989b;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/*Product__right*/
+.product__title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.product__text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.product__list{
+    margin-bottom: 20px;
+}
+
+.product__structure{
+    margin-bottom: 20px;
+}
+
+.product__date{
+    margin-bottom: 20px;
+}
+
+.product__vitamins{
+    margin-bottom: 20px;
+}
+
+.product__technikal{
+    margin-bottom: 20px;
+}
+
+.product__table{
+    display: block;
+    padding: 15px;
+    background-color: rgb(255, 143, 30, .8);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.product__table p:last-child{
+    margin-top: 5px;
+}
+
+.product__indicator{
+    margin-bottom: 20px;
+}
+
+.indicator__title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.indicator__item{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.indicator__item.show{
+    background-color: rgb(255, 143, 30, .8);
+}
+
+.product__energy{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.orange{
+    color: #ff8f1e;
+}
 /*----------Media----------*/
 
 @media (max-width:1311px){
@@ -1099,8 +1238,33 @@ body{
     #a_b_k{
         margin-right: 0;
     }
+}
 
+@media (max-width:1040px){
+    /*Карточки товара*/
+    .product__inner{
+        flex-wrap: wrap;
+    }
 
+    .product__left{
+        width: 100%;
+    }
+
+    .product__right{
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .product .assortment__block{
+        width: 350px;
+        margin: 0 auto 20px;
+    }
+
+    .product__volume{
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
 @media (max-width:850px){
