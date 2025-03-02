@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="message" viewBox="0 0 16 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.99998 14.5362L8.05784 12H13.3333C14.0697 12 14.6666 11.4031 14.6666 10.6667V2.66671C14.6666 1.93033 14.0697 1.33337 13.3333 1.33337H2.66665C1.93027 1.33337 1.33331 1.93033 1.33331 2.66671V10.6667C1.33331 11.4031 1.93027 12 2.66665 12H3.99998V14.5362ZM7.67545 10.6667L5.33331 12.1305V10.6667H2.66665V2.66671H13.3333V10.6667H7.67545ZM4.66665 8.66671V7.33337H9.33331V8.66671H4.66665ZM4.66665 4.66671V6.00004H10.6666V4.66671H4.66665Z"/>
+            </g>
+        </symbol>
+        <symbol id="eye" viewBox="0 0 16 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 2.66663C9.81838 2.66663 11.5571 3.62038 13.1775 5.18739C13.7304 5.72199 14.2305 6.29273 14.6707 6.86371C14.9364 7.20825 15.125 7.47929 15.2283 7.64076L15.458 7.99996L15.2283 8.35916C15.125 8.52063 14.9364 8.79167 14.6707 9.13621C14.2305 9.70719 13.7304 10.2779 13.1775 10.8125C11.5571 12.3795 9.81838 13.3333 8.00002 13.3333C6.18165 13.3333 4.4429 12.3795 2.82249 10.8125C2.26968 10.2779 1.76955 9.70719 1.32929 9.13621C1.06362 8.79167 0.874998 8.52063 0.771725 8.35916L0.541992 7.99996L0.771725 7.64076C0.874998 7.47929 1.06362 7.20825 1.32929 6.86371C1.76955 6.29273 2.26968 5.72199 2.82249 5.18739C4.4429 3.62038 6.18165 2.66663 8.00002 2.66663ZM13.6149 7.67788C13.2118 7.15511 12.7535 6.63209 12.2507 6.14586C10.855 4.79621 9.4034 3.99996 8.00002 3.99996C6.59663 3.99996 5.14501 4.79621 3.74938 6.14586C3.24657 6.63209 2.78827 7.15511 2.38518 7.67788C2.29812 7.79078 2.21767 7.89851 2.14413 7.99996C2.21767 8.10141 2.29812 8.20914 2.38518 8.32204C2.78827 8.84481 3.24657 9.36782 3.74938 9.85406C5.14501 11.2037 6.59663 12 8.00002 12C9.4034 12 10.855 11.2037 12.2507 9.85406C12.7535 9.36782 13.2118 8.84481 13.6149 8.32204C13.7019 8.20914 13.7824 8.10141 13.8559 7.99996C13.7824 7.89851 13.7019 7.79078 13.6149 7.67788ZM5.33335 7.99996C5.33335 9.47272 6.52726 10.6666 8.00002 10.6666C9.47277 10.6666 10.6667 9.47272 10.6667 7.99996C10.6667 6.5272 9.47277 5.33329 8.00002 5.33329C6.52726 5.33329 5.33335 6.5272 5.33335 7.99996ZM9.33335 7.99996C9.33335 8.73634 8.73639 9.33329 8.00002 9.33329C7.26364 9.33329 6.66668 8.73634 6.66668 7.99996C6.66668 7.26358 7.26364 6.66663 8.00002 6.66663C8.73639 6.66663 9.33335 7.26358 9.33335 7.99996Z"/>
+            </g>
+        </symbol>
+        <symbol id="gift" viewBox="0 0 16 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.66467 4.66671C3.44587 4.30896 3.33331 3.86861 3.33331 3.33337C3.33331 2.2781 4.12688 1.33337 5.33331 1.33337C6.54131 1.33337 7.51549 2.14246 7.99998 3.40926C8.48447 2.14246 9.45865 1.33337 10.6666 1.33337C11.8731 1.33337 12.6666 2.2781 12.6666 3.33337C12.6666 3.86861 12.5541 4.30896 12.3353 4.66671H13.3333C14.0697 4.66671 14.6666 5.26366 14.6666 6.00004V7.33337C14.6666 8.06975 14.0697 8.66671 13.3333 8.66671V13.3334C13.3333 14.0698 12.7364 14.6667 12 14.6667H3.99998C3.2636 14.6667 2.66665 14.0698 2.66665 13.3334V8.66671C1.93027 8.66671 1.33331 8.06975 1.33331 7.33337V6.00004C1.33331 5.26366 1.93027 4.66671 2.66665 4.66671H3.66467ZM7.33331 6.00004H2.66665V7.33337H7.33331V6.00004ZM13.3333 7.33337H8.66665V6.00004H13.3333V7.33337ZM7.33331 13.3334V8.66671H3.99998V13.3334H7.33331ZM12 13.3334H8.66665V8.66671H12V13.3334ZM5.33331 2.66671C4.91974 2.66671 4.66665 2.96802 4.66665 3.33337C4.66665 4.16886 5.34465 4.56612 6.95293 4.6497C6.77418 3.40777 6.1081 2.66671 5.33331 2.66671ZM8.99998 4.6497C9.17872 3.40777 9.84481 2.66671 10.6196 2.66671C11.0332 2.66671 11.2863 2.96802 11.2863 3.33337C11.2863 4.16886 10.6083 4.56612 8.99998 4.6497Z"/>
+            </g>
+        </symbol>
+        <symbol id="heart" viewBox="0 0 16 16">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0355 1.33338C10.0704 1.33337 9.44828 1.44835 8.73512 1.79742C8.47109 1.92666 8.22338 2.0823 7.99333 2.26388C7.77215 2.09248 7.53434 1.94399 7.28123 1.8188C6.55423 1.45922 5.90021 1.33337 4.96972 1.33337C2.47764 1.33337 0.666687 3.39822 0.666687 6.07996C0.666687 8.10521 1.79591 10.0616 3.89925 11.9533C5.00328 12.9463 6.4129 13.9289 7.42242 14.4517L8.00002 14.7508L8.57762 14.4517C9.58714 13.9289 10.9968 12.9463 12.1008 11.9533C14.2041 10.0616 15.3334 8.10521 15.3334 6.07996C15.3334 3.4266 13.5053 1.34361 11.0355 1.33338ZM14 6.07996C14 7.66664 13.0575 9.29959 11.2092 10.9619C10.2015 11.8683 8.906 12.774 8.00002 13.2492C7.09405 12.774 5.79857 11.8683 4.79087 10.9619C2.94257 9.29959 2.00002 7.66664 2.00002 6.07996C2.00002 4.09852 3.25578 2.66671 4.96972 2.66671C5.70954 2.66671 6.16544 2.75443 6.69011 3.01394C7.00002 3.16722 7.27394 3.36962 7.51104 3.62255L8.00158 4.14584L8.48765 3.61841C8.73009 3.35534 9.00803 3.14833 9.3213 2.99499C9.8306 2.7457 10.258 2.66671 11.0327 2.66671C12.7255 2.67373 14 4.12602 14 6.07996Z"/>
+            </g>
+        </symbol>
+        <symbol id="profile" viewBox="0 0 23 22">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.187 14C8.94788 14 7.18701 12.4274 7.18701 9C7.18701 6.75576 8.76611 5 11.187 5C13.6012 5 15.187 6.92158 15.187 9.2C15.187 12.4796 13.4051 14 11.187 14ZM9.18701 9C9.18701 11.2693 10.0052 12 11.187 12C12.3647 12 13.187 11.2984 13.187 9.2C13.187 7.95042 12.4027 7 11.187 7C9.92075 7 9.18701 7.81582 9.18701 9Z" fill="#9564AA"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.187 22C5.11188 22 0.187012 17.0751 0.187012 11C0.187012 4.92487 5.11188 0 11.187 0C17.2621 0 22.187 4.92487 22.187 11C22.187 17.0751 17.2621 22 11.187 22ZM18.5865 16.1246C19.5956 14.6703 20.187 12.9042 20.187 11C20.187 6.02944 16.1576 2 11.187 2C6.21645 2 2.18701 6.02944 2.18701 11C2.18701 12.9042 2.77839 14.6703 3.78752 16.1246C4.91296 14.6381 7.55761 14 11.187 14C14.8164 14 17.4611 14.6381 18.5865 16.1246ZM17.1517 17.7398C16.859 16.6874 14.7564 16 11.187 16C7.61763 16 5.51502 16.6874 5.22233 17.7398C6.81031 19.1462 8.89895 20 11.187 20C13.4751 20 15.5637 19.1462 17.1517 17.7398Z"/>
+            </g>
+        </symbol>
+        <symbol id="photo" viewBox="0 0 23 22">
+            <g>
+                <path d="M19.187 7C19.187 7.55228 18.7393 8 18.187 8C17.6347 8 17.187 7.55228 17.187 7C17.187 6.44772 17.6347 6 18.187 6C18.7393 6 19.187 6.44772 19.187 7Z" fill="#9564AA"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18701 10C6.18701 12.7614 8.42559 15 11.187 15C13.9484 15 16.187 12.7614 16.187 10C16.187 7.23858 13.9484 5 11.187 5C8.42559 5 6.18701 7.23858 6.18701 10ZM14.187 10C14.187 11.6569 12.8439 13 11.187 13C9.53016 13 8.18701 11.6569 8.18701 10C8.18701 8.34315 9.53016 7 11.187 7C12.8439 7 14.187 8.34315 14.187 10Z" fill="#9564AA"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.12403 2.84538C6.19488 2.74688 6.27357 2.62631 6.37391 2.46372C6.41056 2.40433 6.5105 2.23944 6.58493 2.11665L6.66881 1.97841C7.4978 0.622387 8.10041 0 9.18701 0H13.187C14.2736 0 14.8762 0.622387 15.7052 1.97841L15.7891 2.11664C15.8635 2.23943 15.9635 2.40433 16.0001 2.46372C16.1005 2.62631 16.1791 2.74688 16.25 2.84538C16.2967 2.91033 16.3375 2.96194 16.3708 3H19.187C20.8439 3 22.187 4.34315 22.187 6V15C22.187 16.6569 20.8439 18 19.187 18H3.18701C1.53016 18 0.187012 16.6569 0.187012 15V6C0.187012 4.34315 1.53016 3 3.18701 3H6.00321C6.0365 2.96194 6.07731 2.91033 6.12403 2.84538ZM3.18701 5C2.63473 5 2.18701 5.44772 2.18701 6V15C2.18701 15.5523 2.63473 16 3.18701 16H19.187C19.7393 16 20.187 15.5523 20.187 15V6C20.187 5.44772 19.7393 5 19.187 5H16.187C15.5227 5 15.0746 4.63641 14.6264 4.01326C14.5233 3.86988 14.4211 3.71332 14.2981 3.51409C14.256 3.44583 14.1466 3.26536 14.0716 3.14152L13.9988 3.02159C13.5465 2.28172 13.2737 2 13.187 2H9.18701C9.10028 2 8.82751 2.28172 8.37521 3.02159L8.30244 3.14152C8.2274 3.26534 8.11793 3.44596 8.07588 3.51409C7.95293 3.71332 7.85076 3.86988 7.74763 4.01326C7.29938 4.63641 6.85135 5 6.18701 5H3.18701Z"/>
+            </g>
+        </symbol>
+        <symbol id="settings" viewBox="0 0 23 22">
+            <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.187 15.8042C8.97787 15.8042 7.18701 14.0133 7.18701 11.8042C7.18701 9.59506 8.97787 7.8042 11.187 7.8042C13.3962 7.8042 15.187 9.59506 15.187 11.8042C15.187 14.0133 13.3962 15.8042 11.187 15.8042ZM13.187 11.8042C13.187 12.9088 12.2916 13.8042 11.187 13.8042C10.0824 13.8042 9.18701 12.9088 9.18701 11.8042C9.18701 10.6996 10.0824 9.8042 11.187 9.8042C12.2916 9.8042 13.187 10.6996 13.187 11.8042Z" fill="#9564AA"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8432 20.7012L20.0604 18.484L19.2795 15.6472L19.6197 14.8347L22.187 13.386V10.2506L19.627 8.79593L19.2925 7.98487L20.0832 5.14655L17.8644 2.93103L15.0273 3.71168L14.2166 3.37177L12.7678 0.804199H9.63245L8.17773 3.36424L7.36686 3.69866L4.52899 2.90701L2.31371 5.12229L3.09449 7.95987L2.75459 8.77054L0.187012 10.2193V13.3538L2.74475 14.8118L3.07953 15.6235L2.28898 18.4614L4.5051 20.6775L7.34269 19.8967L8.15345 20.2367L9.60228 22.8032H12.7369L14.1937 20.2454L15.0053 19.9107L17.8432 20.7012ZM18.0397 13.4298L17.1679 15.512L17.8232 17.8928L17.2548 18.4612L14.879 17.7993L12.796 18.6584L11.5743 20.8032H10.7699L9.55842 18.6571L7.47856 17.785L5.09648 18.4404L4.52904 17.873L5.19087 15.4972L4.33183 13.4143L2.18701 12.1918V11.3872L4.33411 10.1757L5.20621 8.09575L4.55076 5.71366L5.11702 5.14741L7.49277 5.81015L9.57656 4.95075L10.7963 2.8042H11.5999L12.8115 4.9513L14.8914 5.82339L17.274 5.16782L17.8428 5.73586L17.1811 8.11116L18.0405 10.1948L20.187 11.4145V12.2181L18.0397 13.4298Z"/>
+            </g>
+        </symbol>
+        <symbol id="logout" viewBox="0 0 23 22">
+            <g>
+                <path d="M7.4799 6.51033L10.7728 9.80322L0.187011 9.80322L0.187011 11.8032L10.7728 11.8032L7.4799 15.0961L8.89412 16.5103L14.6012 10.8032L8.89412 5.09612L7.4799 6.51033Z" fill="#9564AA"/>
+                <path d="M18.187 0.803222L14.187 0.803222L14.187 2.80322L18.187 2.80322L18.187 18.8032L14.187 18.8032L14.187 20.8032L18.187 20.8032C19.2916 20.8032 20.187 19.9078 20.187 18.8032L20.187 2.80322C20.187 1.69865 19.2916 0.803222 18.187 0.803222Z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container container--header">
+            <div class="header__inner">
+                <div class="header__logo">Logo</div>
+                <nav class="nav">
+                    <a class="nav__link" href="#">People nearby</a>
+                    <a class="nav__link" href="#">Search</a>
+                    <a class="nav__link nav__link--premium" href="#">Premium</a>
+                </nav>
+                <button class="burger">
+                    <span class="burger__item">Menu</span>
+                </button>
+                <a class="header__link" href="#">
+                    <img class="header__img" src="img/diamond.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+<!--Page-->
+<div class="page">
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <div class="sidebar__header">
+            <img class="sidebar__img" src="img/sidebar-img.jpg" alt="">
+            <div class="sidebar__profile">
+                <div class="sidebar__name">Test2412</div>
+                <a class="sidebar__premium" href="#">Get premium</a>
+            </div>
+        </div>
+        <div class="sidebar__content">
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#profile"></use>
+                </svg>
+                <p>Profile</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#photo"></use>
+                </svg>
+                <p>My photos</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#message"></use>
+                </svg>
+                <p>Messages</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#heart"></use>
+                </svg>
+                <p>Favorites</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#eye"></use>
+                </svg>
+                <p>Guests</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#settings"></use>
+                </svg>
+                <p>Settings</p>
+            </a>
+            <a class="sidebar__link" href="#">
+                <svg class="sidebar__icon">
+                    <use xlink:href="#logout"></use>
+                </svg>
+                <p>Log out</p>
+            </a>
+        </div>
+    </aside>
+
+<div class="page__item">
+    <!--Shop-->
+    <div class="shop">
+        <div class="container">
+            <h2 class="shop__title">Закончились кредиты?</h2>
+            <hr class="shop__hr">
+            <div class="shop__discount">
+                <div class="shop__rebate">Скидка 40%</div>
+                <div class="shop__time">Предложение действует в течение:</div>
+                <div class="shop__timer" id="timer">00 : 10 : 00</div>
+            </div>
+
+            <!--Shop Slider-->
+            <div class="shop__slider" id="shopSlider">
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>50 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>150 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>300 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>500 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>1000 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+                <div class="shop__slider-item">
+                    <a class="shop__price" href="#">
+                        <p>1000 <span>cr</span> / $5</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="shop__inner">
+                <div class="shop__item">
+                    <p class="shop__text">50 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="shop__item" href="#">
+                    <p class="shop__text">150 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <p class="shop__text">300 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <p class="shop__text">500 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <p class="shop__text">1000 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+                <div class="shop__item">
+                    <p class="shop__text">1000 <span>cr</span></p>
+                    <div class="text-center">
+                        <a class="button" href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn" type="button">Try now</button>
+            </div>
+            <div class="accept">
+                <input class="input" type="checkbox" name="rules" id="rules">
+                <label class="label" for="rules">By clicking Checkbox you agree and accept our <a class="label__link" href="#" target="_blank">Privacy Policy</a>, and <a class="label__link" href="#" target="_blank">Terms of use</a></label>
+            </div>
+        </div>
+    </div>
+
+    <!--Premium-->
+    <div class="premium">
+        <div class="container">
+            <img class="premium__img" src="img/diamond-big.svg" alt="">
+            <a class="premium__item item--1" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#message"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Отправлять сообщения</div>
+            </a>
+            <a class="premium__item item--2" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#eye"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Просматривать скрытые фото</div>
+            </a>
+            <a class="premium__item item--3" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#gift"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Оплачивать подарки</div>
+            </a>
+            <a class="premium__item item--4" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#heart"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Пользоваться другими премиум функциями</div>
+            </a>
+            <a class="premium__item item--5" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#message"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Просматривать скрытые фото</div>
+            </a>
+            <a class="premium__item item--6" href="#">
+                <div class="social__item">
+                    <svg class="social__icon">
+                        <use xlink:href="#heart"></use>
+                    </svg>
+                </div>
+                <div class="premium__text">Просматривать скрытые фото</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!--Parallax-->
+    <div class="parallax parallax--1">
+        <img class="parallax__img" id="parallax1" data-speed="0.8" src="img/parallax-1.png" alt="">
+    </div>
+
+    <div class="parallax parallax--2">
+        <img class="parallax__img" id="parallax2" data-speed="0.8" src="img/parallax-2.png" alt="">
+    </div>
+</div>
+
+<!-- Javascript -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

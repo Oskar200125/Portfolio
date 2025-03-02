@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 1</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="twitter" viewBox="0 0 128.000000 128.000000">
+            <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)">
+            <path d="M814 1149 c-108 -31 -186 -136 -188 -250 l-1 -61 -57 6 c-157 18
+            -345 115 -447 231 l-31 36 -15 -35 c-21 -50 -19 -152 4 -202 10 -22 33 -57 51
+            -78 l33 -37 -29 7 c-16 4 -40 11 -53 16 -13 5 -26 7 -28 5 -8 -9 19 -103 38
+            -134 26 -41 73 -81 124 -104 l40 -19 -30 -1 c-16 -1 -40 -1 -52 0 -39 3 -25
+            -35 36 -103 30 -33 114 -76 151 -76 l25 -1 -30 -24 c-54 -44 -152 -77 -255
+            -84 l-95 -7 75 -36 c188 -91 394 -100 591 -28 162 59 289 169 381 330 53 93
+            98 259 98 363 0 28 10 44 62 95 34 34 59 64 57 67 -3 2 -27 -2 -54 -10 -65
+            -20 -86 -20 -56 1 23 16 81 100 81 116 0 5 -10 2 -22 -6 -13 -8 -48 -22 -79
+            -31 l-56 -18 -44 30 c-71 49 -150 64 -225 42z"/>
+        </g>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 128.000000 128.000000">
+            <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)">
+            <path d="M642 1245 c-112 -35 -160 -114 -169 -280 l-6 -105 -59 0 -58 0 0
+            -110 0 -110 60 0 60 0 2 -307 3 -308 128 -3 127 -3 0 311 0 310 89 0 88 0 7
+            93 c4 50 9 100 12 110 5 15 -4 17 -95 17 l-101 0 0 73 c0 102 8 111 109 115
+            l81 4 0 104 0 104 -117 -1 c-69 0 -136 -6 -161 -14z"/>
+        </g>
+        </symbol>
+
+        <symbol id="in" viewBox="0 0 128.000000 128.000000">
+            <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)">
+            <path d="M58 1264 c-15 -8 -32 -23 -38 -34 -14 -26 -14 -1154 0 -1181 27 -49
+            31 -49 620 -49 589 0 593 0 620 49 14 27 14 1155 0 1182 -27 49 -30 49 -622
+            49 -469 -1 -557 -3 -580 -16z m313 -233 c22 -23 29 -39 29 -69 0 -94 -123
+            -134 -185 -60 -57 68 -11 158 80 158 38 0 52 -5 76 -29z m563 -243 c22 -7 57
+            -29 78 -50 58 -58 68 -108 68 -335 l0 -193 -94 0 -94 0 -4 188 c-3 203 -8 221
+            -60 243 -38 15 -83 3 -113 -33 -25 -29 -25 -31 -25 -214 l0 -184 -95 0 -95 0
+            0 290 0 291 93 -3 92 -3 3 -38 3 -38 21 27 c44 56 136 77 222 52z m-544 -288
+            l0 -290 -95 0 -95 0 0 290 0 290 95 0 95 0 0 -290z"/>
+        </g>
+        </symbol>
+    </svg>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">HONEY</a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link">Buy Honey</a>
+                    <a href="#" class="nav__link">About Us</a>
+                    <a href="#" class="nav__link">Contacts</a>
+                </nav>
+                <button class="burger" type="button" id="burger">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!--Intro-->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Honey Wellness<br>&amp; Golden Nectar</h1>
+                <h3 class="intro__subtitle">Taste Paradise</h3>
+                <ul class="intro__list">
+                    <li><img class="intro__icon" src="img/intro/icon.svg" alt=""><span class="intro__icon-numbers">100%</span>Pure Honey!</li>
+                    <li><img class="intro__icon" src="img/intro/icon.svg" alt=""><span class="intro__icon-numbers">10</span>Honey Varieties to Explore!</li>
+                    <li><img class="intro__icon" src="img/intro/icon.svg" alt=""><span class="intro__icon-numbers">15%</span>Save On Your First Order!</li>
+                </ul>
+                <div class="intro__btn">
+                    <button class="btn btn--intro">Order</button>
+                </div>
+                <img class="intro__photo" src="img/intro/intro-1.jpg" alt="">
+           </div>
+        </div>
+    </div>
+
+    <!--Benefits-->
+    <div class="benefits">
+        <div class="benefits__inner">
+            <div class="benefits__item">
+                <img class="benefits__photo" src="img/benefits/benefits-2.jpg" alt="">
+            </div>
+            <div class="benefits__item">
+                <div class="benefits__content">
+                    <div class="benefits__line">
+                        <img class="benefits__icon" src="img/benefits/icon.svg" alt="">
+                        <p>Nature’s sweetener, healthy and delicious. Nature’s sweetener, healthy and delicious</p>
+                    </div>
+                    <div class="benefits__line">
+                        <img class="benefits__icon" src="img/benefits/icon.svg" alt="">
+                        <p>Boost your immunity with raw honey. Boost your immunity with raw honey</p>
+                    </div>
+                    <div class="benefits__line">
+                        <img class="benefits__icon" src="img/benefits/icon.svg" alt="">
+                        <p>A natural energy source for your day. A natural energy source for your day</p>
+                    </div>
+                    <div class="benefits__line">
+                        <img class="benefits__icon" src="img/benefits/icon.svg" alt="">
+                        <p>Handcrafted honey, made with love. Handcrafted honey, made with love</p>
+                    </div>
+                </div>
+                <div class="btn__inner">
+                    <button class="btn btn--benefits">Order</button>
+                </div>
+            </div>
+            <div class="benefits__item">
+                <img class="benefits__photo" src="img/benefits/benefits-2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Form-->
+    <div class="container">
+        <div class="feedback">
+            <div class="feedback__container">
+                <div class="feedback__title">Get in touch</div>
+                <form action="/" class="form" method="post">
+                    <div class="form__group">
+                        <input class="input" type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form__group">
+                        <input class="input" type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" name="rules" id="rules">
+                        <label class="label" for="rules">I accept Privacy policy</label>
+                    </div>
+                    <button class="btn btn--form" type="submit">Submit form</button>
+                </form>
+            </div>
+            <img class="feedback__photo" src="img/feedback/feedback-1.jpg" alt="">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__nav-link">Buy Honey</a>
+                    <a href="#" class="footer__nav-link">About Us</a>
+                    <a href="#" class="footer__nav-link">Contacts</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__item">
+                    <a href="index.html" class="header__logo">HONEY</a>
+                </div>
+                <div class="footer__item">
+                    <div class="social">
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#in"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg class="social__icon">
+                                <use xlink:href="#in"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <a href="#" class="btn btn--footer">Order</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom footer--bottom">
+                <div class="footer__item">
+                    <a class="footer__copyright" href="#">2024, Copyright</a>
+                </div>
+                <div class="footer__item">
+                    <a class="footer__copyright" href="#">Privacy policy</a>
+                </div>
+                <div class="footer__item">
+                    <a class="footer__copyright" href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

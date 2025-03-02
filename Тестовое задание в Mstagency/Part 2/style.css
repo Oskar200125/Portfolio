@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+}
+
+.video-container {
+    margin: 100px auto;
+    padding: 0 20px;
+
+    position: relative;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+}
+
+.content__left{
+    padding-right: 250px;
+}
+
+.video-piece {
+    position: absolute;
+}
+
+.top {
+    top: 2%;
+    left: 31%;
+
+    height: 25%;
+    clip-path: inset(0 0 75% 0);
+}
+
+.middle-top {
+    top: 5%;
+    left: 23%;
+
+    height: 25%;
+    clip-path: inset(25% 0 50% 0);
+}
+
+.middle-bottom {
+    top: 8%;
+    left: 30%;
+
+    height: 25%;
+    clip-path: inset(50% 0 25% 0);
+}
+
+.bottom {
+    top: 11%;
+    left: 34%;
+
+    height: 25%;
+    clip-path: inset(75% 0 0 0);
+}
